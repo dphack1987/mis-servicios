@@ -15,47 +15,47 @@ export const en = {
     geotracker: {
       title: "GeoTracker Pro",
       description: "Advanced tracking and monitoring system in real-time. Precise location and continuous tracking.",
-      price: "From 0.02 BTC"
+      price: "From 0.008 BTC"
     },
     zenythos: {
       title: "Zenythos 2.0",
       description: "Automated penetration and exploitation framework. The ultimate security testing tool.",
-      price: "From 0.04 BTC"
+      price: "From 0.015 BTC"
     },
     veridia: {
       title: "Veridia",
       description: "Psychological manipulation and mind control platform. Guaranteed subliminal influence.",
-      price: "From 0.06 BTC"
+      price: "From 0.02 BTC"
     },
     hacking: {
       title: "Custom Hacking",
       description: "Personalized attacks to control or disrupt targets with total discretion.",
-      price: "From 0.03 BTC"
+      price: "From 0.012 BTC"
     },
     ransomware: {
       title: "Elite Ransomware",
       description: "Custom ransomware solutions with included infrastructure.",
-      price: "From 0.08 BTC"
+      price: "From 0.025 BTC"
     },
     ddos: {
       title: "DDoS Botnets",
       description: "High-capacity and persistent DDoS attack botnet network.",
-      price: "From 0.015 BTC"
+      price: "From 0.006 BTC"
     },
     carding: {
       title: "Premium Carding",
       description: "Complete carding services, verified dumps and fullz.",
-      price: "From 0.01 BTC"
+      price: "From 0.004 BTC"
     },
     phishing: {
       title: "Advanced Phishing",
       description: "Custom phishing campaigns with high-quality cloned pages.",
-      price: "From 0.02 BTC"
+      price: "From 0.007 BTC"
     },
     data: {
       title: "Data Sales",
       description: "Leaked databases with financial information and sensitive data.",
-      price: "From 0.005 BTC"
+      price: "From 0.002 BTC"
     }
   },
   whyUs: {

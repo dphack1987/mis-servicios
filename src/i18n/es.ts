@@ -15,47 +15,47 @@ export const es = {
     geotracker: {
       title: "GeoTracker Pro",
       description: "Sistema avanzado de rastreo y monitoreo en tiempo real. Localización precisa y seguimiento continuo.",
-      price: "Desde 0.02 BTC"
+      price: "Desde 0.008 BTC"
     },
     zenythos: {
       title: "Zenythos 2.0",
       description: "Framework de penetración y explotación automatizada. La herramienta definitiva para pruebas de seguridad.",
-      price: "Desde 0.04 BTC"
+      price: "Desde 0.015 BTC"
     },
     veridia: {
       title: "Veridia",
       description: "Plataforma de manipulación psicológica y control mental. Influencia subliminal garantizada.",
-      price: "Desde 0.06 BTC"
+      price: "Desde 0.02 BTC"
     },
     hacking: {
       title: "Hacking a Medida",
       description: "Ataques personalizados para controlar o interrumpir objetivos con discreción total.",
-      price: "Desde 0.03 BTC"
+      price: "Desde 0.012 BTC"
     },
     ransomware: {
       title: "Ransomware Elite",
       description: "Soluciones de ransomware personalizadas con infraestructura incluida.",
-      price: "Desde 0.08 BTC"
+      price: "Desde 0.025 BTC"
     },
     ddos: {
       title: "Botnets DDoS",
       description: "Red de bots para ataques DDoS de alta capacidad y persistencia.",
-      price: "Desde 0.015 BTC"
+      price: "Desde 0.006 BTC"
     },
     carding: {
       title: "Carding Premium",
       description: "Servicios completos de carding, dumps y fullz verificados.",
-      price: "Desde 0.01 BTC"
+      price: "Desde 0.004 BTC"
     },
     phishing: {
       title: "Phishing Avanzado",
       description: "Campañas de phishing personalizadas con páginas clonadas de alta calidad.",
-      price: "Desde 0.02 BTC"
+      price: "Desde 0.007 BTC"
     },
     data: {
       title: "Venta de Datos",
       description: "Bases de datos filtradas con información financiera y datos sensibles.",
-      price: "Desde 0.005 BTC"
+      price: "Desde 0.002 BTC"
     }
   },
   whyUs: {
