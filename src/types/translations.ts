@@ -1,4 +1,4 @@
-export type ServiceKey = 'geotracker' | 'zenythos' | 'veridia' | 'hacking' | 'ransomware' | 'ddos' | 'carding' | 'phishing' | 'data';
+export type ServiceKey = 'geotracker' | 'zenythos' | 'veridia' | 'hacking' | 'ransomware' | 'ddos' | 'carding' | 'phishing' | 'data' | 'espionaje_social' | 'espionaje_corporativo' | 'recuperacion_cuentas';
 
 export type ServiceTranslation = {
   title: string;
@@ -38,6 +38,9 @@ export type TranslationType = {
     carding: ServiceTranslation;
     phishing: ServiceTranslation;
     data: ServiceTranslation;
+    espionaje_social: ServiceTranslation;
+    espionaje_corporativo: ServiceTranslation;
+    recuperacion_cuentas: ServiceTranslation;
   };
   whyUs: {
     title: string;

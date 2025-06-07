@@ -56,6 +56,21 @@ export const en = {
       title: "Data Sales",
       description: "Leaked databases with financial information and sensitive data.",
       price: "From 0.002 BTC"
+    },
+    espionaje_social: {
+      title: "Social Media Espionage",
+      description: "Full access to accounts and social media activity monitoring.",
+      price: "From 0.01 BTC"
+    },
+    espionaje_corporativo: {
+      title: "Corporate Espionage",
+      description: "Infiltration and extraction of confidential business information.",
+      price: "From 0.03 BTC"
+    },
+    recuperacion_cuentas: {
+      title: "Account Recovery",
+      description: "Recovery of blocked accounts and blockchain wallets.",
+      price: "From 0.015 BTC"
     }
   },
   whyUs: {

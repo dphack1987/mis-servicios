@@ -44,41 +44,65 @@ export default function Home() {
     },
     {
       id: 4,
+      key: "espionaje_social",
+      verificado: true,
+      destacado: true,
+      ruta: "/servicios/espionaje-social",
+      gradient: "from-pink-500/20 to-red-500/20"
+    },
+    {
+      id: 5,
+      key: "espionaje_corporativo",
+      verificado: true,
+      destacado: true,
+      ruta: "/servicios/espionaje-corporativo",
+      gradient: "from-violet-500/20 to-indigo-500/20"
+    },
+    {
+      id: 6,
+      key: "recuperacion_cuentas",
+      verificado: true,
+      destacado: true,
+      ruta: "/servicios/recuperacion-cuentas",
+      gradient: "from-amber-500/20 to-yellow-500/20"
+    },
+    {
+      id: 7,
       key: "hacking",
       verificado: true,
       ruta: "/servicios/hacking-medida",
       gradient: "from-green-500/20 to-blue-500/20"
     },
     {
-      id: 5,
+      id: 8,
       key: "ransomware",
       verificado: true,
       ruta: "/servicios/ransomware",
       gradient: "from-yellow-500/20 to-red-500/20"
     },
     {
-      id: 6,
+      id: 9,
       key: "ddos",
       verificado: true,
       ruta: "/servicios/ddos",
       gradient: "from-cyan-500/20 to-blue-500/20"
     },
     {
-      id: 7,
+      id: 10,
       key: "carding",
       verificado: true,
       ruta: "/servicios/carding",
       gradient: "from-emerald-500/20 to-teal-500/20"
     },
     {
-      id: 8,
+      id: 11,
       key: "phishing",
       verificado: true,
       ruta: "/servicios/phishing",
       gradient: "from-orange-500/20 to-red-500/20"
     },
     {
-      id: 9,
+      id: 12,
       key: "data",
       verificado: true,
       ruta: "/servicios/datos-robados",

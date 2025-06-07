@@ -56,6 +56,21 @@ export const es = {
       title: "Venta de Datos",
       description: "Bases de datos filtradas con información financiera y datos sensibles.",
       price: "Desde 0.002 BTC"
+    },
+    espionaje_social: {
+      title: "Espionaje de Redes Sociales",
+      description: "Acceso completo a cuentas y monitoreo de actividad en redes sociales.",
+      price: "Desde 0.01 BTC"
+    },
+    espionaje_corporativo: {
+      title: "Espionaje Corporativo",
+      description: "Infiltración y extracción de información confidencial empresarial.",
+      price: "Desde 0.03 BTC"
+    },
+    recuperacion_cuentas: {
+      title: "Recuperación de Cuentas",
+      description: "Recuperación de acceso a cuentas bloqueadas y wallets blockchain.",
+      price: "Desde 0.015 BTC"
     }
   },
   whyUs: {
