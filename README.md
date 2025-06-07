@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DPhack Services
 
-## Getting Started
+Plataforma multilingüe de servicios de hacking con soporte para español, inglés y ruso.
 
-First, run the development server:
+## Características
 
+- Interfaz moderna y responsiva
+- Soporte multiidioma (ES/EN/RU)
+- Persistencia de preferencias de idioma
+- Diseño optimizado para rendimiento
+
+## Despliegue en Web Normal (Vercel)
+
+1. Crear una cuenta en Vercel (https://vercel.com)
+2. Instalar Vercel CLI:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm i -g vercel
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Login y despliegue:
+```bash
+vercel login
+vercel
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Despliegue en Dark Web (.onion)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Requisitos
+- Docker
+- Docker Compose
 
-## Learn More
+### Pasos
 
-To learn more about Next.js, take a look at the following resources:
+1. Clonar el repositorio:
+```bash
+git clone https://github.com/dphack1987/mis-servicios.git
+cd mis-servicios
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Iniciar los servicios:
+```bash
+docker-compose up -d
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Obtener la dirección .onion:
+```bash
+docker-compose logs tor
+```
 
-## Deploy on Vercel
+La dirección .onion se mostrará en los logs del contenedor tor.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Dirección .onion Persistente
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Para mantener la misma dirección .onion después de reiniciar:
+
+1. Crear archivo .env:
+```bash
+TOR_SERVICE_KEY=your_private_key
+```
+
+2. Descomentar las variables de entorno en docker-compose.yml:
+```yaml
+WEBSITE_TOR_SERVICE_KEY: ${TOR_SERVICE_KEY}
+WEBSITE_TOR_SERVICE_VERSION: '3'
+```
+
+## Desarrollo Local
+
+1. Instalar dependencias:
+```bash
+npm install
+```
+
+2. Iniciar servidor de desarrollo:
+```bash
+npm run dev
+```
+
+3. Abrir http://localhost:3000
+
+## Tecnologías
+
+- Next.js 15.3
+- React
+- Tailwind CSS
+- TypeScript
+- Docker
+- Tor Hidden Services
+
+## Seguridad
+
+- Comunicación cifrada end-to-end en la versión .onion
+- Sin logs ni registros
+- Anonimato garantizado

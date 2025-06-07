@@ -1,12 +1,17 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
+  "name": "dphack-services",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "PORT=8000 next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "docker:build": "docker-compose build",
+    "docker:start": "docker-compose up -d",
+    "docker:stop": "docker-compose down",
+    "deploy:vercel": "vercel",
+    "deploy:prod": "vercel --prod"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
