@@ -2,93 +2,119 @@
 
 Plataforma multilingüe de servicios de hacking con soporte para español, inglés y ruso.
 
-## Características
+## 🌐 URLs de Acceso
+
+- **Web Normal**: [https://dphack-services.vercel.app](https://dphack-services.vercel.app)
+- **Dark Web**: La dirección .onion se genera al desplegar
+
+## ✨ Características
 
 - Interfaz moderna y responsiva
 - Soporte multiidioma (ES/EN/RU)
 - Persistencia de preferencias de idioma
 - Diseño optimizado para rendimiento
+- Comunicación cifrada end-to-end
+- Sin logs ni registros
+- Anonimato garantizado
 
-## Despliegue en Web Normal (Vercel)
+## 🚀 Despliegue
 
-1. Crear una cuenta en Vercel (https://vercel.com)
-2. Instalar Vercel CLI:
-```bash
-npm i -g vercel
-```
+### Web Normal (Vercel)
 
-3. Login y despliegue:
-```bash
-vercel login
-vercel
-```
+1. Fork este repositorio
+2. Conéctalo a Vercel:
+   ```bash
+   npm i -g vercel
+   vercel login
+   vercel
+   ```
+3. Configura las variables de entorno en el dashboard de Vercel:
+   - `NODE_ENV`: production
+   - `NEXT_PUBLIC_APP_URL`: URL de tu aplicación
 
-## Despliegue en Dark Web (.onion)
+### Dark Web (.onion)
 
-### Requisitos
-- Docker
-- Docker Compose
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/dphack1987/mis-servicios.git
+   cd mis-servicios
+   ```
 
-### Pasos
+2. Ejecuta el script de instalación:
+   ```bash
+   chmod +x setup-onion.sh
+   ./setup-onion.sh
+   ```
 
-1. Clonar el repositorio:
-```bash
-git clone https://github.com/dphack1987/mis-servicios.git
-cd mis-servicios
-```
+3. La dirección .onion se mostrará en los logs
 
-2. Iniciar los servicios:
-```bash
-docker-compose up -d
-```
+#### Dirección .onion Persistente
 
-3. Obtener la dirección .onion:
-```bash
-docker-compose logs tor
-```
+1. Crea `.env`:
+   ```bash
+   TOR_SERVICE_KEY=your_private_key
+   ```
 
-La dirección .onion se mostrará en los logs del contenedor tor.
+2. Edita `docker-compose.yml`:
+   ```yaml
+   WEBSITE_TOR_SERVICE_KEY: ${TOR_SERVICE_KEY}
+   WEBSITE_TOR_SERVICE_VERSION: '3'
+   ```
 
-### Dirección .onion Persistente
+## 💻 Desarrollo Local
 
-Para mantener la misma dirección .onion después de reiniciar:
+1. Instala dependencias:
+   ```bash
+   npm install
+   ```
 
-1. Crear archivo .env:
-```bash
-TOR_SERVICE_KEY=your_private_key
-```
+2. Copia `.env.local.example`:
+   ```bash
+   cp .env.local.example .env.local
+   ```
 
-2. Descomentar las variables de entorno en docker-compose.yml:
-```yaml
-WEBSITE_TOR_SERVICE_KEY: ${TOR_SERVICE_KEY}
-WEBSITE_TOR_SERVICE_VERSION: '3'
-```
+3. Inicia el servidor:
+   ```bash
+   npm run dev
+   ```
 
-## Desarrollo Local
+4. Abre [http://localhost:8000](http://localhost:8000)
 
-1. Instalar dependencias:
-```bash
-npm install
-```
+## 🛠 Scripts Disponibles
 
-2. Iniciar servidor de desarrollo:
-```bash
-npm run dev
-```
+- `npm run dev`: Inicia el servidor de desarrollo
+- `npm run build`: Construye la aplicación
+- `npm run start`: Inicia la aplicación en producción
+- `npm run docker:build`: Construye la imagen Docker
+- `npm run docker:start`: Inicia los contenedores
+- `npm run docker:stop`: Detiene los contenedores
+- `npm run deploy:vercel`: Despliega en Vercel
+- `npm run deploy:prod`: Despliega en producción
 
-3. Abrir http://localhost:3000
-
-## Tecnologías
+## 🔧 Tecnologías
 
 - Next.js 15.3
-- React
+- React 18
 - Tailwind CSS
 - TypeScript
 - Docker
 - Tor Hidden Services
 
-## Seguridad
+## 📝 Notas
 
-- Comunicación cifrada end-to-end en la versión .onion
-- Sin logs ni registros
-- Anonimato garantizado
+- La versión web normal está optimizada para SEO y rendimiento
+- La versión .onion prioriza la privacidad y el anonimato
+- Ambas versiones comparten la misma base de código
+- Las actualizaciones se sincronizan automáticamente
+
+## 🤝 Contribuir
+
+1. Fork el repositorio
+2. Crea una rama (`git checkout -b feature/mejora`)
+3. Commit tus cambios (`git commit -am 'Añade mejora'`)
+4. Push a la rama (`git push origin feature/mejora`)
+5. Abre un Pull Request
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
